@@ -33,86 +33,67 @@
 			.a, a:hover, a:focus {
 				color: #0277bd;
 			}
-			a, .dropdown-menu li a:hover, .dropdown-menu-default li a:hover {
+			a {
 				color: #0277bd;
 			}
 			.navbar-brand>img {
-				display: inline-block;
+				display: inline-block; 
 				margin-right: 8px;
 				margin-top: -4px;
 			}
 			.buffer {
-				margin-top: 1em;
+				margin-top: 4em;
 			}
 			.navbar {
 				margin-bottom: 0em;
 			}
-			.btn-primary:not(.btn-link):not(.btn-flat), .btn-primary:hover:not(.btn-link):not(.btn-flat) {
-				background-color: #e0e0e0;
-				color: #000;
-			}
-			.btn-primary:active:not(.btn-link):not(.btn-flat), .btn-primary:focus:not(.btn-link):not(.btn-flat) {
-				background-color: #0277bd;
-				color: #fff;
-			}
-			.form-control, .form-control:focus, .form-control.focus {
-				border: 0;
-				background-image: linear-gradient(#0277bd,#0277bd),linear-gradient(#d2d2d2,#d2d2d2);
-			}
 		</style>
 	</head>
 	<body>
-		<div class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<a class="navbar-brand" alt="Brand" href="javascript:void(0)"><img src="img/galliumos_logo.svg"><strong>Gallium OS</strong> Releases</a>
-			</div>
-			<div class="navbar-collapse collapse navbar-responsive-collapse">
-				<form class="navbar-form navbar-right">
-					<input type="text" class="form-control col-lg-8" placeholder="Search">
-				</form>
-			</div>
-		</div>
 		<div class="container-fluid">
+			<div class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" alt="Brand" href="javascript:void(0)"><img src="img/galliumos_logo.svg"><strong>Gallium OS</strong> Releases</a>
+				</div>
+				<div class="navbar-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Device <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:void(0)">Action</a></li>
+								<li><a href="javascript:void(0)">Another action</a></li>
+								<li><a href="javascript:void(0)">Something else here</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Dropdown header</li>
+								<li><a href="javascript:void(0)">Separated link</a></li>
+								<li><a href="javascript:void(0)">One more separated link</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Release Channel <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:void(0)">Action</a></li>
+								<li><a href="javascript:void(0)">Another action</a></li>
+								<li><a href="javascript:void(0)">Something else here</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Dropdown header</li>
+								<li><a href="javascript:void(0)">Separated link</a></li>
+								<li><a href="javascript:void(0)">One more separated link</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="javascript:void(0)">Reset</a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<input type="text" class="form-control col-lg-8" placeholder="Search">
+					</form>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-2">
-					<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						Sort by Device
-						<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						Sort by Type
-						<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Acer C720 (Peppy)
 				</div>
 			</div>
-			<div class="row buffer">
-				<div class="col-md-12">
-					<h3>Search Results</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-					
-				</div>
-			</div>
+
 			<div class="row">
 				<div class="col-md-12">
 					<table class="table table-striped table-hover ">
@@ -120,7 +101,7 @@
 							<tr>
 								<th>Device</th>
 								<th>Build</th>
-								<th>SHA-1</th>
+								<th>Hash</th>
 								<th>Date Added</th>
 							</tr>
 						</thead>
@@ -170,4 +151,4 @@
 		});
 		</script>
 	</body>
-</html>
+</html> 
