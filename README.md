@@ -8,4 +8,4 @@ Download page using [Bootstrap Material Design Theme](https://github.com/FezVras
 - find the page under `dist/get.gallium.org.html`
 
 ## Screenshot (05.11.2015)
-![][dist/screen_05112015.png?raw=true "Screenshot"]
+![](/dist/screen_05112015.png?raw=true "Screenshot")
